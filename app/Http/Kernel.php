@@ -1,4 +1,4 @@
-<?php namespace App\Http;
+<?php namespace Ombu\Http;
 
 use Exception;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
@@ -25,9 +25,9 @@ class Kernel extends HttpKernel {
 	 * @var array
 	 */
 	protected $routeMiddleware = [
-		'auth' => 'App\Http\Middleware\Authenticate',
+		'auth' => 'Ombu\Http\Middleware\Authenticate',
 		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
-		'guest' => 'App\Http\Middleware\RedirectIfAuthenticated',
+		'guest' => 'Ombu\Http\Middleware\RedirectIfAuthenticated',
 	];
 
 }

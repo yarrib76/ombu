@@ -1,6 +1,6 @@
-<?php namespace App\Services;
+<?php namespace Ombu\Services;
 
-use App\User;
+use Ombu\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 
