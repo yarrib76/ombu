@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b200235a93a73fcb828571296156d231",
+    "hash": "c397e79abab135061065c0c1a04f30b9",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -210,6 +210,52 @@
             "time": "2014-09-09 13:34:57"
         },
         {
+            "name": "illuminate/html",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/html.git",
+                "reference": "b04be9a84be0d6f7552b281ad6b9e2795218fe56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/html/zipball/b04be9a84be0d6f7552b281ad6b9e2795218fe56",
+                "reference": "b04be9a84be0d6f7552b281ad6b9e2795218fe56",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "~5.0",
+                "illuminate/session": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Html\\": ""
+                },
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "time": "2014-10-16 14:38:30"
+        },
+        {
             "name": "ircmaxell/password-compat",
             "version": "1.0.x-dev",
             "source": {
@@ -305,12 +351,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "389c836980e7e40c6694d8e06eddd13e671bd604"
+                "reference": "dd78c4fe763859d11e726477125b7d1a00c860c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/389c836980e7e40c6694d8e06eddd13e671bd604",
-                "reference": "389c836980e7e40c6694d8e06eddd13e671bd604",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/dd78c4fe763859d11e726477125b7d1a00c860c0",
+                "reference": "dd78c4fe763859d11e726477125b7d1a00c860c0",
                 "shasum": ""
             },
             "require": {
@@ -413,7 +459,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-11-30 19:23:52"
+            "time": "2014-12-01 01:55:03"
         },
         {
             "name": "league/flysystem",
@@ -1647,6 +1693,55 @@
             "time": "2014-10-13 12:58:55"
         },
         {
+            "name": "fzaninotto/faker",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "420851d62126509a5444fdd06f15f57ac05ab29a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/420851d62126509a5444fdd06f15f57ac05ab29a",
+                "reference": "420851d62126509a5444fdd06f15f57ac05ab29a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2014-11-30 16:08:55"
+        },
+        {
             "name": "phpdocumentor/reflection-docblock",
             "version": "dev-master",
             "source": {
@@ -2492,7 +2587,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "illuminate/html": 20,
+        "fzaninotto/faker": 20
+    },
     "prefer-stable": false,
     "platform": [],
     "platform-dev": []
