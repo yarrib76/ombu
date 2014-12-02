@@ -7,6 +7,9 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
+<meta name="csrf-token" content="{{ csrf_token() }}">
+	
+
 	<!-- Application Title -->
 	<title>Ombu Flota Admin</title>
 

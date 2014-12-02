@@ -17,7 +17,9 @@
 	"autoload": {
 		"classmap": [
 			"database",
-			"tests/TestCase.php"
+			"tests/TestCase.php",
+			"tests/BaseTester.php",
+			"database/seeds/BaseSeeder.php"
 		],
 		"psr-4": {
 			"Ombu\\": "app/"
