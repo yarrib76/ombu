@@ -351,12 +351,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "dd78c4fe763859d11e726477125b7d1a00c860c0"
+                "reference": "d3441d3b6e73db5162c789d4082e8731e35bf80e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/dd78c4fe763859d11e726477125b7d1a00c860c0",
-                "reference": "dd78c4fe763859d11e726477125b7d1a00c860c0",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d3441d3b6e73db5162c789d4082e8731e35bf80e",
+                "reference": "d3441d3b6e73db5162c789d4082e8731e35bf80e",
                 "shasum": ""
             },
             "require": {
@@ -459,7 +459,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-12-01 01:55:03"
+            "time": "2014-12-02 03:13:28"
         },
         {
             "name": "league/flysystem",
@@ -1855,12 +1855,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "21b9006b7ceb7e1cb0b705615af31f67c8cd1692"
+                "reference": "b8781bdc6379749fd3f3f76aa5109957f46bc9e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/21b9006b7ceb7e1cb0b705615af31f67c8cd1692",
-                "reference": "21b9006b7ceb7e1cb0b705615af31f67c8cd1692",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/b8781bdc6379749fd3f3f76aa5109957f46bc9e6",
+                "reference": "b8781bdc6379749fd3f3f76aa5109957f46bc9e6",
                 "shasum": ""
             },
             "require": {
@@ -1873,7 +1873,7 @@
             },
             "require-dev": {
                 "ext-xdebug": ">=2.1.4",
-                "phpunit/phpunit": "dev-master"
+                "phpunit/phpunit": "~4.3"
             },
             "suggest": {
                 "ext-dom": "*",
@@ -1892,6 +1892,9 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                ""
+            ],
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1909,7 +1912,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-11-11 14:18:30"
+            "time": "2014-12-02 13:16:21"
         },
         {
             "name": "phpunit/php-file-iterator",

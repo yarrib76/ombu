@@ -8,7 +8,7 @@
 	<meta name="author" content="">
 
 	<!-- Application Title -->
-	<title>Laravel Application</title>
+	<title>Ombu Flota Admin</title>
 
 	<!-- Bootstrap CSS -->
 	<link href="/css/app.css" rel="stylesheet">
