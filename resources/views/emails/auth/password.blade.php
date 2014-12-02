@@ -4,12 +4,12 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<h2>Password Reset</h2>
+		<h2>Restablecer Password</h2>
 
 		<div>
-			To reset your password, complete this form: {{ url('password/reset', [$token]) }}.<br><br>
+			Para restablecer el password, complete el siguiente formulario: {{ url('password/reset', [$token]) }}.<br><br>
 
-			This link will expire in {{ config('auth.reminder.expire', 60) }} minutes.
+			El mismo expirara en  {{ config('auth.reminder.expire', 60) }} minutos.
 		</div>
 	</body>
 </html>
