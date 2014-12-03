@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 Use Ombu\Observers\ModificaSlugObserver;
+Use Str;
 
 class TipoServicio extends Model {
 

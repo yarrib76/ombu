@@ -18,8 +18,8 @@ class UserTest extends BaseTester {
 		//assert
 
 
-		//$response = $this->call('GET', 'tipoServicio');
-		//$this->assertEquals(200, $response->getStatusCode());
+		$response = $this->call('GET', 'usuario');
+		$this->assertEquals(200, $response->getStatusCode());
 	}
 
 	private function crearUsuario(){

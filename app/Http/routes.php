@@ -19,3 +19,24 @@ Route::bind('categoriaServicio', function ($slug)
 
 $router->resource('categoriaServicio', 'CategoriaServicioController');
 
+//Tipo de Servicio
+Route::bind('tipoServicio', function ($slug)
+		{
+
+
+		return Ombu\TipoServicio::where('slug', $slug)->first();
+
+		});
+$router->resource('tipoServicio', 'TipoServicioController');
+		
+//Users
+Route::bind('usuario', function ($slug)
+		{
+
+
+		return Ombu\User::where('slug', $slug)->first();
+
+		});
+$router->resource('usuario', 'UserController');
+
+

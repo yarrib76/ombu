@@ -70,9 +70,13 @@ class TipoServicioController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit(TipoServicio $tipoServicio)
 	{
-		//
+		$categorias = CategoriaServicio::lists('nombre', 'id');
+		$nombre = 'Agregar un tipo de Servicio';
+		
+		return view('TipoServicio.edit', compact('tipoServicio', 'categorias', 'nombre'));
+		
 	}
 
 	/**
@@ -81,9 +85,11 @@ class TipoServicioController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(TipoServicio $tipoServicio)
 	{
 		//
+		$tipoServicio->fill(\Request::input())->save();
+		return redirect ('tipoServicio');
 	}
 
 	/**
