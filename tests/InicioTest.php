@@ -1,9 +1,9 @@
 <?php
 
-class ExampleTest extends TestCase {
+class InicioTest extends TestCase {
 
 	/**
-	 * A basic functional test example.
+	 * Busca la pagina de inicio
 	 *
 	 * @return void
 	 */
