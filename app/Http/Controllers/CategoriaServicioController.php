@@ -10,6 +10,7 @@ class CategoriaServicioController extends Controller {
 
 	public function __construct (CategoriaServicio $categoriaServicio){
 
+		$this->middleware('auth');
 		$this->categoriaServicio = $categoriaServicio;
 
 	}
