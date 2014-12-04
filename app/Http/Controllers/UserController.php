@@ -3,6 +3,7 @@
 use Ombu\Http\Requests;
 use Ombu\Http\Controllers\Controller;
 use Ombu\User;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 
 class UserController extends Controller {
@@ -50,9 +51,14 @@ class UserController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show(User $user)
 	{
-		//
+		if ( is_null($user->name))
+		{	
+				throw new ModelNotFoundException("No se encontro al usuario");
+		}
+		return view('User.show', compact('user'));
+		
 	}
 
 	/**
@@ -61,9 +67,10 @@ class UserController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit(User $user)
 	{
-		//
+		return view('User.edit', compact('user'));
+		
 	}
 
 	/**

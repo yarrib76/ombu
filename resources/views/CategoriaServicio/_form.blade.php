@@ -1,13 +1,12 @@
-<div class="form-group {{ $errors->has('nombre') ? 'has-error' : '' }} ">
-	{!! Form::label('nombre', 'Nombre:') !!}
-	{!! Form::text('nombre', null, ['class' => 'form-control']) !!}
-	{!! $errors->first('nombre', '<span class="help-block">:message</span>') !!}
-</div>
-
 <div class="form-group">
-	{!! Form::label('descripcion', 'Descripción:') !!}
-	{!! Form::textarea('descripcion', null, ['class' => 'form-control']) !!}
+	{!! Form::label('nombre', 'Nombre:', ['class' => 'col-sm-3 control-label']) !!}
+	<div class="col-sm-6">
+	{!! Form::text('nombre', null, ['class' => 'form-control', 'placeholder' => 'Nombre',   'value'=> old('nombre') ]) !!}
+	</div>
 </div>
-
-
-
+<div class="form-group">
+	{!! Form::label('descripcion', 'Descripcion:',  ['class' => 'col-sm-3 control-label']) !!}
+	<div class="col-sm-6">
+	{!! Form::textArea('descripcion', null, ['class' => 'form-control', 'placeholder' => 'Descripcion de la categoria de servicio',   'value'=> old('descripcion') ]) !!}
+	</div>
+</div>
